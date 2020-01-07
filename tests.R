@@ -22,8 +22,29 @@ descriptive(2500,x4)
 source("~/Projects/R-library/R/wmean.R")
 
 data0 <- readLines(file("inputs/D00_input00.txt"))
-n <- as.numeric(data0[1])
+n0 <- as.numeric(data0[1])
 x0 <- as.numeric(unlist(strsplit(data0[2], " ")))
 w0 <- as.numeric(unlist(strsplit(data0[3], " ")))
 wmean(n0,x0,w0)
+
+
+#####
+
+source("~/Projects/R-library/R/quartiles.R")
+
+data0 <- readLines(file("inputs/D01_input00.txt"))
+n0 <- as.numeric(data0[1])
+x0 <- as.numeric(unlist(strsplit(data0[2], " ")))
+
+quartiles1(n0,x0)
+
+
+
+data1 <- readLines(file("inputs/D01_input01.txt"))
+n1 <- as.numeric(data1[1])
+x1 <- as.numeric(unlist(strsplit(data1[2], " ")))
+
+quartiles1(n1,x1)
+
+
 

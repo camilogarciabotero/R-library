@@ -6,6 +6,7 @@
 #' @description This function returns a three integers (mean, median and mode respectively).
 #' @param n the size of a vector o set of values.
 #' @param x A vector to evaluate.
+
 descriptive <- function(n,x){
 # Init objects
     x <- as.vector(x)
