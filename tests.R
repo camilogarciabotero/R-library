@@ -1,4 +1,4 @@
-source("~/Projects/R-library/descriptive.R")
+source("~/Projects/R-library/R/descriptive.R")
 
 
 data0 <- readLines(file("inputs/D0_input00.txt"))
@@ -16,4 +16,14 @@ descriptive(100,x2)
 data3 <- readLines(file("inputs/D0_input03.txt"))
 x4 <- as.numeric(unlist(strsplit(data3[2], " ")))
 descriptive(2500,x4)
+
+#####
+
+source("~/Projects/R-library/R/wmean.R")
+
+data0 <- readLines(file("inputs/D00_input00.txt"))
+n <- as.numeric(data0[1])
+x0 <- as.numeric(unlist(strsplit(data0[2], " ")))
+w0 <- as.numeric(unlist(strsplit(data0[3], " ")))
+wmean(n0,x0,w0)
 
