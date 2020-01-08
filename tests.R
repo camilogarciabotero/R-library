@@ -46,5 +46,16 @@ x1 <- as.numeric(unlist(strsplit(data1[2], " ")))
 
 quartiles1(n1,x1)
 
+#####
+
+source("~/Projects/R-library/R/interqrange.R")
+
+
+data0 <- readLines(file("inputs/D01-1_input00.txt"))
+n0 <- as.numeric(data0[1])
+x0 <- as.numeric(unlist(strsplit(data0[2], " ")))
+f0 <- as.numeric(unlist(strsplit(data0[3], " ")))
+
+interqrange(n0,x0,f0)
 
 

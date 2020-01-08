@@ -1,4 +1,4 @@
-#' The weighted mean given the main vector of values and 
+#' The weighted mean given the main vector of values and a vector of each value weight
 #' 
 #' 
 #' @author Camilo Garcia Botero.
